@@ -1,2 +1,2 @@
 # C - Sorting algorithms & Big O
-In this project, I implemented twelve different sorting algorithms.
+In this project, I implemented different sorting algorithms.
