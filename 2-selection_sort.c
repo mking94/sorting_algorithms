@@ -19,6 +19,7 @@ smaller = j;
 array[current] = array[current] + array[smaller];
 array[smaller] = array[current] - array[smaller];
 array[current] = array[current] - array[smaller];
+print_array(array, size);
 }
 }       
 }
