@@ -19,6 +19,8 @@ swap = 1;
 array[i] = array[i] + array[i + 1];
 array[i + 1] = array[i] - array[i + 1];
 array[i] = array[i] - array[i + 1];
+for(int loop = 0; loop < size; loop++)
+printf("%d",array[loop]);
 }
 }
 passage++;
