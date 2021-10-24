@@ -7,7 +7,9 @@
 
 void bubble_sort(int *array, size_t size)
 {
-int swap = 1, i, passage = 0;
+int swap = 1, passage = 0;
+size_t i;
+
 while(swap == 1){
 swap = 0;
 for(i = 0; i < size - passage; i++)
@@ -15,7 +17,6 @@ for(i = 0; i < size - passage; i++)
 if(array[i] > array[i + 1])
 {
 swap = 1;
-/* swap between array[i] and array[i+1] */
 array[i] = array[i] + array[i + 1];
 array[i + 1] = array[i] - array[i + 1];
 array[i] = array[i] - array[i + 1];
