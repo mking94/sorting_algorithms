@@ -1,5 +1,4 @@
 #include "sort.h"
-#include <stdbool.h>
 
 /**
  * bubble_sort - function sorts an array using the Bubble sort.
@@ -17,6 +16,7 @@ return;
 while (swap == 1)
 {
 swap = 0;
+passage++;
 for (i = 0; i < size - passage; i++)
 {
 if (array[i] > array[i + 1])
@@ -28,6 +28,5 @@ array[i + 1] = temp;
 print_array(array, size);
 }
 }
-passage++;
 }
 }
