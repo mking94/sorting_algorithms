@@ -20,8 +20,9 @@ if(array[j] > array[j + 1])
 {
 temp = array[j + 1];
 array[j + 1] = array[j];
-array[j] = temp; 
-aucun_echange = false;          
+array[j] = temp;
+print_array(array, size);
+aucun_echange = false;
 }
 if(aucun_echange == true)
 break;
