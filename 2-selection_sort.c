@@ -13,18 +13,18 @@ int temp;
 
 if(array == NULL || size < 2)
 return;
-     for(i = 0 ; i < size - 1 ; i++)
-     {
-         min = i;                 
-         for(j = i+1 ; j < size ; j++)
-             if(t[j] < t[min])
-                min = j;
-         if(min != i)
-         {
-            temp = t[i];
-            t[i] = t[min];
-            t[min] = temp;          
-         }
-     }
-
+for(i = 0 ; i < size - 1 ; i++)
+{
+min = i;
+for(j = i+1 ; j < size ; j++)
+if(t[j] < t[min])
+min = j;
+if(min != i)
+{
+temp = array[i];
+array[i] = array[min];
+array[min] = temp;
+print_array(array, size);      
+}
+}
 }
