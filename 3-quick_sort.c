@@ -23,7 +23,8 @@ if (mur != courant)
 {
 tmp = array[courant];
 array[courant] = array[mur];
-array[mur] = tmp;              
+array[mur] = tmp;
+print_array(array, size);
 }
 mur++;
 }
