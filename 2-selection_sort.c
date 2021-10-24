@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * selection_sort - function sorts an array in ascending using the selection sort.
  * @array: input array
@@ -8,7 +9,8 @@
 void selection_sort(int *array, size_t size)
 {
 size_t current, smaller, j;
-for (current = 0; en_cours < size - 1; current++)
+
+for (current = 0; current < size - 1; current++)
 {
 smaller = current;
 for (j = current + 1; j < size; j++)
