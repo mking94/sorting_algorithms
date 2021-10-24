@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <stdbool.h>
 /**
  * bubble_sort - function sorts an array using the Bubble sort.
  * @array: table of array
