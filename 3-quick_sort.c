@@ -31,5 +31,5 @@ mur++;
 courant++;
 }
 quick_sort(array, mur - 1);
-quick_sort(arra + mur - 1, taille - mur + 1);
+quick_sort(array + mur - 1, taille - mur + 1);
 }
