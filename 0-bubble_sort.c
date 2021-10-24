@@ -12,7 +12,8 @@ size_t i;
 
 if (array == NULL || size < 2)
 return;
-while (swap == 1){
+while (swap == 1)
+{
 swap = 0;
 for (i = 0; i < size - passage; i++)
 {
