@@ -5,27 +5,23 @@
  * @size: size of array.
  */
 
-void bubble_sort(int *array, size_t size)
+void bubble_sort(int *array, int size)
 {
-int swap = 1, passage = 0, temp;
-size_t i;
+int temp;
+bool aucun_echange;
 
-if (array == NULL || size < 2)
-return;
-while (swap == 1)
+for (size_t i = size - 1 ; i >= 0 ; i--)
 {
-swap = 0;
-for (i = 0; i < size - passage; i++)
+aucun_echange = true;
+for (size_t j = 0 ; j <= i ; j++)
+if(array[j] > array[j + 1])
 {
-if (array[i] > array[i + 1])
-{
-swap = 1;
-temp = array[i];
-array[i] = array[i + 1];
-array[i + 1] = temp;
-print_array(array, size);
+temp = array[j + 1];
+array[j + 1] = array[j];
+array[j] = temp; 
+aucun_echange = false;          
 }
-}
-passage++;
+if(aucun_echange == true)
+break;
 }
 }
