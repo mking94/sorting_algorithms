@@ -8,14 +8,15 @@
 
 void selection_sort(int *array, size_t size)
 {
-int min,temp;
+size_t i, j, min;
+int temp;
 
 if(array == NULL || size < 2)
 return;
-     for(size_t i = 0 ; i < size - 1 ; i++)
+     for(i = 0 ; i < size - 1 ; i++)
      {
          min = i;                 
-         for(size_t j = i+1 ; j < size ; j++)
+         for(j = i+1 ; j < size ; j++)
              if(t[j] < t[min])
                 min = j;
          if(min != i)
