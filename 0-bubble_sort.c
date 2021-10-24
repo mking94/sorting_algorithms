@@ -5,7 +5,7 @@
  * @size: size of array.
  */
 
-void bubble_sort(int *array, int size)
+void bubble_sort(int *array, size_t size)
 {
 int temp;
 bool aucun_echange;
