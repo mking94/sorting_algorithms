@@ -10,6 +10,8 @@ void bubble_sort(int *array, int size)
 int temp;
 bool aucun_echange;
 
+if (areay == NULL || size < 2)
+return;
 for (size_t i = size - 1 ; i >= 0 ; i--)
 {
 aucun_echange = true;
