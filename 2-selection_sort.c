@@ -8,21 +8,22 @@
 
 void selection_sort(int *array, size_t size)
 {
-size_t current, smaller, j;
+int min,temp;
 
-for (current = 0; current < size - 1; current++)
-{
-smaller = current;
-for (j = current + 1; j < size; j++)
-{
-if (array[j] > array[smaller])
-{
-smaller = j;
-array[current] = array[current] + array[smaller];
-array[smaller] = array[current] - array[smaller];
-array[current] = array[current] - array[smaller];
-print_array(array, size);
-}
-}       
-}
+if(array == NULL || size < 2)
+return;
+     for(size_t i = 0 ; i < size - 1 ; i++)
+     {
+         min = i;                 
+         for(size_t j = i+1 ; j < size ; j++)
+             if(t[j] < t[min])
+                min = j;
+         if(min != i)
+         {
+            temp = t[i];
+            t[i] = t[min];
+            t[min] = temp;          
+         }
+     }
+
 }
