@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * bubble_sort - function sorts an array in ascending using the Bubble sort.
+ * bubble_sort - function sorts an array using the Bubble sort.
  * @array: table of array
  * @size: size of array.
  */
@@ -10,13 +10,13 @@ void bubble_sort(int *array, size_t size)
 int swap = 1, passage = 0, temp;
 size_t i;
 
-if(array == NULL || size < 2)
+if (array == NULL || size < 2)
 return;
-while(swap == 1){
+while (swap == 1){
 swap = 0;
-for(i = 0; i < size - passage; i++)
+for (i = 0; i < size - passage; i++)
 {
-if(array[i] > array[i + 1])
+if (array[i] > array[i + 1])
 {
 swap = 1;
 temp = array[i];
