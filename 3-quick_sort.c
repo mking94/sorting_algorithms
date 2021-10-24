@@ -8,7 +8,7 @@
 
 void quick_sort(int *array, size_t size)
 {
-size_t mur, courant
+size_t mur, courant;
 int pivot, tmp;
 
 if (size < 2 || array == NULL)
