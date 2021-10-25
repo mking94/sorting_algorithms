@@ -24,7 +24,7 @@ if (mur != courant)
 tmp = array[courant];
 array[courant] = array[mur];
 array[mur] = tmp;
-print_array(array, size);
+print_array(array, 10);
 }
 mur++;
 }
